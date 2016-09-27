@@ -13,14 +13,16 @@ class CommandGenerator
 
     private $pauseCommand;
 
+    private $directory;
+
     public function __construct()
     {
         $this->pauseCommand = require __DIR__ . '/data/pause.php';
         $this->commands = require __DIR__ . '/data/commands.php';
-        $directory = __DIR__ . '/' . self::DIRECTORY;
+        $this->directory = __DIR__ . '/' . self::DIRECTORY;
 
-        if (!is_dir($directory)) {
-            mkdir($directory);
+        if (!is_dir($this->directory)) {
+            mkdir($this->directory);
         }
     }
 
@@ -54,7 +56,7 @@ class CommandGenerator
         $min = $this->min($index);
         $max = $this->max($index);
 
-        return sprintf('%s/%s/' . self::FILE_NAME_TEMPLATE, __DIR__, self::DIRECTORY, $min, $max);
+        return sprintf('%s/' . self::FILE_NAME_TEMPLATE, $this->directory, $min, $max);
     }
 
     private function min($index)
