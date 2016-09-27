@@ -2,10 +2,10 @@
 
 class CommandGenerator
 {
+    const MIN = 1000;
+    const MAX = 9999;
     const SEGMENT = 200;
-
     const DIRECTORY = 'commands';
-
     const FILE_NAME_TEMPLATE = 'commands_%d-%d.txt';
 
     private $commands;
@@ -25,7 +25,7 @@ class CommandGenerator
 
     public function generate()
     {
-        for ($index = 0; $index < floor(9999 / self::SEGMENT) - 4; $index++) {
+        for ($index = 0; $index <= floor((self::MAX - self::MIN) / self::SEGMENT); $index++) {
             $output = $this->generateSegment($index);
             file_put_contents($this->getFileName($index), $output);
         }
@@ -35,12 +35,11 @@ class CommandGenerator
     {
         $output = '';
         $min = $this->min($index);
+        $max = $this->max($index);
 
-        foreach (range(0, 199) as $value) {
-            $number = $min + $value;
-
-            $output .= "REM " . $number . PHP_EOL;
-            $output .= $this->generateCode($number);
+        for ($value = $min; $value <= $max; $value++) {
+            $output .= "REM " . $value . PHP_EOL;
+            $output .= $this->generateCode($value);
             $output .= PHP_EOL . PHP_EOL;
 
             if (($value + 1) % 5 == 0 && $value < 199) {
@@ -76,7 +75,7 @@ class CommandGenerator
      */
     private function max($index)
     {
-        return 999 + ($index + 1) * self::SEGMENT;
+        return min(999 + ($index + 1) * self::SEGMENT, self::MAX);
     }
 
     private function generateCode($value)
