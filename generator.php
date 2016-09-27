@@ -59,21 +59,11 @@ class CommandGenerator
         return sprintf('%s/%s/' . self::FILE_NAME_TEMPLATE, __DIR__, self::DIRECTORY, $min, $max);
     }
 
-    /**
-     * @param $index
-     *
-     * @return int
-     */
     private function min($index)
     {
         return self::MIN + $index * self::SEGMENT;
     }
 
-    /**
-     * @param $index
-     *
-     * @return int
-     */
     private function max($index)
     {
         return min((self::MIN - 1) + ($index + 1) * self::SEGMENT, self::MAX);
