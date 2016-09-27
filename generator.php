@@ -93,4 +93,4 @@ class CommandGenerator
 $generator = new CommandGenerator();
 $generator->generate();
 
-shell_exec('zip -r commands.zip commands');
+shell_exec(sprintf('zip -r commands.zip %s', CommandGenerator::DIRECTORY));
