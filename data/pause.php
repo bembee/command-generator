@@ -1,0 +1,10 @@
+<?php
+
+return "REM pause
+DELAY 60000
+ENTER
+DELAY 550
+SPACE
+DELAY 300
+
+";
