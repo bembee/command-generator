@@ -5,7 +5,7 @@ class CommandGenerator
     const MIN = 1000;
     const MAX = 9999;
     const PAUSE_TIMES = 5;
-    const SEGMENT = 6000;
+    const SEGMENT = 200;
     const DIRECTORY = 'commands';
     const FILE_NAME_TEMPLATE = 'commands_%d-%d.txt';
 
@@ -39,11 +39,9 @@ class CommandGenerator
         $max = $this->max($index);
 
         for ($value = $min; $value <= $max; $value++) {
-            $output .= "REM " . $value . PHP_EOL;
             $output .= $this->generateCode($value);
-            $output .= PHP_EOL . PHP_EOL;
 
-            if (($value + 1) % self::PAUSE_TIMES == 0 && $value < self::SEGMENT - 1) {
+            if (($value + 1) % self::PAUSE_TIMES == 0 && $value != $max) {
                 $output .= $this->pauseCommand;
             }
         }
@@ -71,13 +69,13 @@ class CommandGenerator
 
     private function generateCode($value)
     {
-        $output = '';
+        $output = "REM " . $value . PHP_EOL;
 
         foreach (str_split($value) as $char) {
             $output .= $this->commands[$char];
         }
 
-        return $output;
+        return $output . PHP_EOL . PHP_EOL;
     }
 }
 
