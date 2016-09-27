@@ -35,18 +35,15 @@ class CommandGenerator
     {
         $output = '';
         $min = $this->min($index);
-        $max = $this->max($index);
 
         foreach (range(0, 199) as $value) {
             $number = $min + $value;
-            if ($number > $max) {
-                continue;
-            }
+
             $output .= "REM " . $number . PHP_EOL;
             $output .= $this->generateCode($number);
             $output .= PHP_EOL . PHP_EOL;
 
-            if (($value + 1) % 5 == 0) {
+            if (($value + 1) % 5 == 0 && $value < 199) {
                 $output .= $this->pauseCommand;
             }
         }

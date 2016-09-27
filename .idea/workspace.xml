@@ -21,11 +21,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
               <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+              <folding>
+                <element signature="n#__construct#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+                <element signature="n#generate#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+                <element signature="n#getFileName#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+                <element signature="n#min#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+                <element signature="n#max#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+                <element signature="n#generateCode#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commands_6200-6399.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/commands_6200-6399.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="9676" column="9" selection-start-line="9676" selection-start-column="9" selection-end-line="9676" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commands_1000-1199.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/commands_1000-1199.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-249774">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commands_9800-9999.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/commands_9800-9999.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-231630">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,8 +91,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/data/commands.php" />
         <option value="$PROJECT_DIR$/data/pause.php" />
-        <option value="$PROJECT_DIR$/generator.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/generator.php" />
       </list>
     </option>
   </component>
@@ -101,6 +148,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="commandgenerator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commandgenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commandgenerator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -189,12 +250,12 @@
       <option name="presentableId" value="Default" />
       <updated>1474973744842</updated>
       <workItem from="1474973747328" duration="3324000" />
-      <workItem from="1474978290242" duration="5928000" />
+      <workItem from="1474978290242" duration="6058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9252000" />
+    <option name="totallyTimeSpent" value="9382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -280,23 +341,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/commands_9800-9999.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4110">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commands/commands_5600-5799.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4110">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/commands_1000-1199.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -336,26 +381,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="n#generate#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-            <element signature="n#generateSegment#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-            <element signature="n#getFileName#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-            <element signature="n#min#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-            <element signature="n#max#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-            <element signature="n#generateCode#0;n#CommandGenerator#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/commands_1000-1199.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249774">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/commands_9800-9999.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/commands_6200-6399.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="9676" column="9" selection-start-line="9676" selection-start-column="9" selection-end-line="9676" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="n#__construct#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+            <element signature="n#generate#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+            <element signature="n#getFileName#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+            <element signature="n#min#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+            <element signature="n#max#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+            <element signature="n#generateCode#0;n#CommandGenerator#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
